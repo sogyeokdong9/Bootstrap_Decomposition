@@ -1,0 +1,463 @@
+@charset "UTF-8";
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+*:disabled {
+  cursor: not-allowed;
+  outline: none;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1em;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue" "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.5;
+}
+
+hr {
+  margin: 2em 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.bd-example-flex {
+  padding: 24px;
+  border: 1px solid #dee2e6;
+}
+
+.bd-example-flex div {
+  margin: 0.5em;
+  background-color: rgba(76, 11, 206, 0.15);
+  border: 1px solid rgba(76, 11, 206, 0.15);
+}
+
+.bd-example-flex p {
+  margin: 0;
+  background-color: #90ee02;
+}
+
+.bd-example-flex + h2 {
+  margin-top: 2em;
+}
+
+.bd-example-flex + .flex-container-classname {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.bd-example-flex + .bd-example-flex {
+  margin-top: 0.5em;
+}
+
+.flex-container-classname::before {
+  display: inline-block;
+  content: "Container Class Name: → ";
+  margin-right: 1em;
+  color: gray;
+}
+
+.d-flex,
+.d-sm-flex,
+.d-md-flex,
+.d-lg-flex,
+.d-xl-flex,
+.d-xxl-flex {
+  display: flex;
+}
+
+.d-inline-flex,
+.d-sm-inline-flex,
+.d-md-inline-flex,
+.d-lg-inline-flex,
+.d-xl-inline-flex,
+.d-xxl-inline-flex {
+  display: inline-flex;
+}
+
+.flex-row,
+.flex-sm-row,
+.flex-md-row,
+.flex-lg-row,
+.flex-xl-row,
+.flex-xxl-row {
+  flex-direction: row;
+}
+
+.flex-column,
+.flex-sm-column,
+.flex-md-column,
+.flex-lg-column,
+.flex-xl-column,
+.flex-xxl-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse,
+.flex-sm-row-reverse,
+.flex-md-row-reverse,
+.flex-lg-row-reverse,
+.flex-xl-row-reverse,
+.flex-xxl-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column-reverse,
+.flex-sm-column-reverse,
+.flex-md-column-reverse,
+.flex-lg-column-reverse,
+.flex-xl-column-reverse,
+.flex-xxl-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.justify-content-start,
+.justify-content-sm-start,
+.justify-content-md-start,
+.justify-content-lg-start,
+.justify-content-xl-start,
+.justify-content-xxl-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end,
+.justify-content-sm-end,
+.justify-content-md-end,
+.justify-content-lg-end,
+.justify-content-xl-end,
+.justify-content-xxl-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center,
+.justify-content-sm-center,
+.justify-content-md-center,
+.justify-content-lg-center,
+.justify-content-xl-center,
+.justify-content-xxl-center {
+  justify-content: center;
+}
+
+.justify-content-between,
+.justify-content-sm-between,
+.justify-content-md-between,
+.justify-content-lg-between,
+.justify-content-xl-between,
+.justify-content-xxl-between {
+  justify-content: space-between;
+}
+
+.justify-content-around,
+.justify-content-sm-around,
+.justify-content-md-around,
+.justify-content-lg-around,
+.justify-content-xl-around,
+.justify-content-xxl-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly,
+.justify-content-sm-evenly,
+.justify-content-md-evenly,
+.justify-content-lg-evenly,
+.justify-content-xl-evenly,
+.justify-content-xxl-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-start,
+.align-items-sm-start,
+.align-items-md-start,
+.align-items-lg-start,
+.align-items-xl-start,
+.align-items-xxl-start {
+  align-items: flex-start;
+}
+
+.align-items-end,
+.align-items-sm-end,
+.align-items-md-end,
+.align-items-lg-end,
+.align-items-xl-end,
+.align-items-xxl-end {
+  align-items: flex-end;
+}
+
+.align-items-center,
+.align-items-sm-center,
+.align-items-md-center,
+.align-items-lg-center,
+.align-items-xl-center,
+.align-items-xxl-center {
+  align-items: center;
+}
+
+.align-items-baseline,
+.align-items-sm-baseline,
+.align-items-md-baseline,
+.align-items-lg-baseline,
+.align-items-xl-baseline,
+.align-items-xxl-baseline {
+  align-self: baseline;
+}
+
+.align-items-stretch,
+.align-items-sm-stretch,
+.align-items-md-stretch,
+.align-items-lg-stretch,
+.align-items-xl-stretch,
+.align-items-xxl-stretch {
+  align-items: stretch;
+}
+
+.align-self-start,
+.align-self-sm-start,
+.align-self-md-start,
+.align-self-lg-start,
+.align-self-xl-start,
+.align-self-xxl-start {
+  align-self: flex-start;
+}
+
+.align-self-end,
+.align-self-sm-end,
+.align-self-md-end,
+.align-self-lg-end,
+.align-self-xl-end,
+.align-self-xxl-end {
+  align-self: flex-end;
+}
+
+.align-self-center,
+.align-self-sm-center,
+.align-self-md-center,
+.align-self-lg-center,
+.align-self-xl-center,
+.align-self-xxl-center {
+  align-self: center;
+}
+
+.align-self-baseline,
+.align-self-sm-baseline,
+.align-self-md-baseline,
+.align-self-lg-baseline,
+.align-self-xl-baseline,
+.align-self-xxl-baseline {
+  align-self: baseline;
+}
+
+.align-self-stretch,
+.align-self-sm-stretch,
+.align-self-md-stretch,
+.align-self-lg-stretch,
+.align-self-xl-stretch,
+.align-self-xxl-stretch {
+  align-self: stretch;
+}
+
+.flex-fill,
+.flex-sm-fill,
+.flex-md-fill,
+.flex-lg-fill,
+.flex-xl-fill,
+.flex-xxl-fill {
+  flex: 1 1 auto;
+}
+
+.flex-grow-0,
+.flex-sm-grow-0,
+.flex-md-grow-0,
+.flex-lg-grow-0,
+.flex-xl-grow-0,
+.flex-xxl-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1,
+.flex-sm-grow-1,
+.flex-md-grow-1,
+.flex-lg-grow-1,
+.flex-xl-grow-1,
+.flex-xxl-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-shrink-0,
+.flex-sm-shrink-0,
+.flex-md-shrink-0,
+.flex-lg-shrink-0,
+.flex-xl-shrink-0,
+.flex-xxl-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-1,
+.flex-sm-shrink-1,
+.flex-md-shrink-1,
+.flex-lg-shrink-1,
+.flex-xl-shrink-1,
+.flex-xxl-shrink-1 {
+  flex-shrink: 1;
+}
+
+button {
+  border-radius: 0;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+}
+
+button,
+button[type=reset],
+button[type=submit],
+button[type=button],
+input[type=file],
+input[type=file],
+input[type=reset],
+input[type=button],
+input[type=submit] {
+  background-color: transparent;
+  border-width: 1px;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
+input[type=file],
+input[type=file]:not(disabled),
+input[type=reset]:not(disabled),
+input[type=button]:not(disabled),
+input[type=submit]:not(disabled),
+button:not(disabled) {
+  cursor: pointer;
+}
+
+input[type=file]:disabled,
+input[type=reset]:disabled,
+input[type=button]:disabled,
+input[type=submit]:disabled,
+button:disabled {
+  cursor: not-allowed;
+}
+
+.btn {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  white-space: nowrap;
+  border-width: inherit;
+  font-weight: inherit;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-radius: inherit;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:enabled {
+  color: inherit;
+}
+
+.btn:hover {
+  color: inherit;
+}
+
+.btn:focus {
+  border-width: inherit;
+  box-shadow: none;
+}
+
+.btn:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn:disabled {
+  color: inherit;
+  opacity: 0.65;
+}
+
+.btn.btn-lg,
+.btn-lg {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-right: 0%;
+  padding-left: 0%;
+  font-size: 2em;
+  border-radius: 0%;
+}
+
+.btn.btn-sm,
+.btn-sm {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-right: 0%;
+  padding-left: 0%;
+  font-size: 1em;
+  border-radius: 0%;
+}
+
+.btn-sm {
+  font-size: 12px;
+}
+
+.btn-md {
+  font-size: 14px;
+}
+
+input[class*=align-self-],
+button[class*=align-self-] {
+  background-color: #EED602;
+}
+
+input[class*=flex-fill],
+button[class*=flex-fill] {
+  background-color: #ee6002;
+}
+
+p[class*=flex-grow-],
+p[class*=flex-grow-],
+input[class*=flex-grow-],
+button[class*=flex-grow-] {
+  background-color: #90ee02;
+}
+
+p[class*=flex-shrink-],
+p[class*=flex-shrink-],
+input[class*=flex-shrink-],
+button[class*=flex-shrink-] {
+  background-color: #9865F4;
+}
+
+.bd-example-flex input {
+  background-color: #02EED6;
+}
+
+.bd-example-flex button {
+  color: white;
+  background-color: #EED602;
+}/*# sourceMappingURL=buttons.css.map */

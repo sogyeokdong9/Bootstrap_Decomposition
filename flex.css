@@ -1,0 +1,242 @@
+.d-flex,
+.d-sm-flex,
+.d-md-flex,
+.d-lg-flex,
+.d-xl-flex,
+.d-xxl-flex {
+  display: flex;
+}
+
+.d-inline-flex,
+.d-sm-inline-flex,
+.d-md-inline-flex,
+.d-lg-inline-flex,
+.d-xl-inline-flex,
+.d-xxl-inline-flex {
+  display: inline-flex;
+}
+
+.flex-row,
+.flex-sm-row,
+.flex-md-row,
+.flex-lg-row,
+.flex-xl-row,
+.flex-xxl-row {
+  flex-direction: row;
+}
+
+.flex-column,
+.flex-sm-column,
+.flex-md-column,
+.flex-lg-column,
+.flex-xl-column,
+.flex-xxl-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse,
+.flex-sm-row-reverse,
+.flex-md-row-reverse,
+.flex-lg-row-reverse,
+.flex-xl-row-reverse,
+.flex-xxl-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column-reverse,
+.flex-sm-column-reverse,
+.flex-md-column-reverse,
+.flex-lg-column-reverse,
+.flex-xl-column-reverse,
+.flex-xxl-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.justify-content-start,
+.justify-content-sm-start,
+.justify-content-md-start,
+.justify-content-lg-start,
+.justify-content-xl-start,
+.justify-content-xxl-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end,
+.justify-content-sm-end,
+.justify-content-md-end,
+.justify-content-lg-end,
+.justify-content-xl-end,
+.justify-content-xxl-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center,
+.justify-content-sm-center,
+.justify-content-md-center,
+.justify-content-lg-center,
+.justify-content-xl-center,
+.justify-content-xxl-center {
+  justify-content: center;
+}
+
+.justify-content-between,
+.justify-content-sm-between,
+.justify-content-md-between,
+.justify-content-lg-between,
+.justify-content-xl-between,
+.justify-content-xxl-between {
+  justify-content: space-between;
+}
+
+.justify-content-around,
+.justify-content-sm-around,
+.justify-content-md-around,
+.justify-content-lg-around,
+.justify-content-xl-around,
+.justify-content-xxl-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly,
+.justify-content-sm-evenly,
+.justify-content-md-evenly,
+.justify-content-lg-evenly,
+.justify-content-xl-evenly,
+.justify-content-xxl-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-start,
+.align-items-sm-start,
+.align-items-md-start,
+.align-items-lg-start,
+.align-items-xl-start,
+.align-items-xxl-start {
+  align-items: flex-start;
+}
+
+.align-items-end,
+.align-items-sm-end,
+.align-items-md-end,
+.align-items-lg-end,
+.align-items-xl-end,
+.align-items-xxl-end {
+  align-items: flex-end;
+}
+
+.align-items-center,
+.align-items-sm-center,
+.align-items-md-center,
+.align-items-lg-center,
+.align-items-xl-center,
+.align-items-xxl-center {
+  align-items: center;
+}
+
+.align-items-baseline,
+.align-items-sm-baseline,
+.align-items-md-baseline,
+.align-items-lg-baseline,
+.align-items-xl-baseline,
+.align-items-xxl-baseline {
+  align-self: baseline;
+}
+
+.align-items-stretch,
+.align-items-sm-stretch,
+.align-items-md-stretch,
+.align-items-lg-stretch,
+.align-items-xl-stretch,
+.align-items-xxl-stretch {
+  align-items: stretch;
+}
+
+.align-self-start,
+.align-self-sm-start,
+.align-self-md-start,
+.align-self-lg-start,
+.align-self-xl-start,
+.align-self-xxl-start {
+  align-self: flex-start;
+}
+
+.align-self-end,
+.align-self-sm-end,
+.align-self-md-end,
+.align-self-lg-end,
+.align-self-xl-end,
+.align-self-xxl-end {
+  align-self: flex-end;
+}
+
+.align-self-center,
+.align-self-sm-center,
+.align-self-md-center,
+.align-self-lg-center,
+.align-self-xl-center,
+.align-self-xxl-center {
+  align-self: center;
+}
+
+.align-self-baseline,
+.align-self-sm-baseline,
+.align-self-md-baseline,
+.align-self-lg-baseline,
+.align-self-xl-baseline,
+.align-self-xxl-baseline {
+  align-self: baseline;
+}
+
+.align-self-stretch,
+.align-self-sm-stretch,
+.align-self-md-stretch,
+.align-self-lg-stretch,
+.align-self-xl-stretch,
+.align-self-xxl-stretch {
+  align-self: stretch;
+}
+
+.flex-fill,
+.flex-sm-fill,
+.flex-md-fill,
+.flex-lg-fill,
+.flex-xl-fill,
+.flex-xxl-fill {
+  flex: 1 1 auto;
+}
+
+.flex-grow-0,
+.flex-sm-grow-0,
+.flex-md-grow-0,
+.flex-lg-grow-0,
+.flex-xl-grow-0,
+.flex-xxl-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1,
+.flex-sm-grow-1,
+.flex-md-grow-1,
+.flex-lg-grow-1,
+.flex-xl-grow-1,
+.flex-xxl-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-shrink-0,
+.flex-sm-shrink-0,
+.flex-md-shrink-0,
+.flex-lg-shrink-0,
+.flex-xl-shrink-0,
+.flex-xxl-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-1,
+.flex-sm-shrink-1,
+.flex-md-shrink-1,
+.flex-lg-shrink-1,
+.flex-xl-shrink-1,
+.flex-xxl-shrink-1 {
+  flex-shrink: 1;
+}/*# sourceMappingURL=flex.css.map */

@@ -1,0 +1,94 @@
+// Valiable
+
+$font-family-sans-serif:
+  // Cross-platform generic font family (default user interface font)
+  system-ui,
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Windows
+  "Segoe UI",
+  // Android
+  Roboto,
+  // older macOS and iOS
+  "Helvetica Neue"
+  // Linux
+  "Noto Sans",
+  "Liberation Sans",
+  // Basic web fallback
+  Arial,
+  // Sans serif fallback
+  sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+  $black: rgb(0, 0, 0);
+  $white: rgb(255, 255, 255);
+
+// Common
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+*:disabled {
+  cursor: not-allowed;
+  outline: none;
+}
+
+body {
+  // background: #24292e; 
+  // color: rgba(255, 255, 255, 0.85);
+  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1em;
+  font-family: $font-family-sans-serif;
+  line-height: 1.5;
+}
+
+hr {
+  margin: 2em 0;
+}
+
+
+// Common Styles
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.bd-example-flex {
+  padding: 24px;
+  border: 1px solid #dee2e6;
+}
+.bd-example-flex div {
+  margin: .5em;
+  background-color: rgba(76,11,206,0.15);
+  border: 1px solid rgba(76,11,206,0.15);
+}
+.bd-example-flex p {
+  margin: 0;
+  background-color: #90ee02;
+}
+.bd-example-flex + h2 {
+  margin-top: 2em;  
+}
+.bd-example-flex + .flex-container-classname {
+  display: inline-block;
+  margin-top: 1em;
+}
+.bd-example-flex + .bd-example-flex {
+  margin-top: .5em;
+}
+
+.flex-container-classname::before {
+  display: inline-block;
+  content: "Container Class Name: → ";
+  margin-right: 1em;
+  color: gray;
+}
+
+
+
