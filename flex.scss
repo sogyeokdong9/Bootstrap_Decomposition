@@ -1,17 +1,6 @@
-// https://getbootstrap.com/docs/5.2/utilities/flex/#enable-flex-behaviors
+@import "common", "utilities", "docs";
 
-// .d-flex
-// .d-inline-flex
-// .d-sm-flex
-// .d-sm-inline-flex
-// .d-md-flex
-// .d-md-inline-flex
-// .d-lg-flex
-// .d-lg-inline-flex
-// .d-xl-flex
-// .d-xl-inline-flex
-// .d-xxl-flex
-// .d-xxl-inline-flex
+// https://getbootstrap.com/docs/5.2/utilities/flex/#enable-flex-behaviors
 
 .d-flex,
 .d-sm-flex,
@@ -19,7 +8,7 @@
 .d-lg-flex,
 .d-xl-flex,
 .d-xxl-flex {
-  display: flex;
+  display: flex !important;
 }
 
 .d-inline-flex,
@@ -28,35 +17,21 @@
 .d-lg-inline-flex,
 .d-xl-inline-flex,
 .d-xxl-inline-flex {
-  display: inline-flex;
+  display: inline-flex !important;
+}
+
+// https://getbootstrap.com/docs/5.2/utilities/flex/#fill
+
+.flex-fill,
+.flex-sm-fill,
+.flex-md-fill,
+.flex-lg-fill,
+.flex-xl-fill,
+.flex-xxl-fill {
+  flex: 1 1 auto !important;
 }
 
 // https://getbootstrap.com/docs/5.2/utilities/flex/#direction
-
-// .flex-row
-// .flex-row-reverse
-// .flex-column
-// .flex-column-reverse
-// .flex-sm-row
-// .flex-sm-row-reverse
-// .flex-sm-column
-// .flex-sm-column-reverse
-// .flex-md-row
-// .flex-md-row-reverse
-// .flex-md-column
-// .flex-md-column-reverse
-// .flex-lg-row
-// .flex-lg-row-reverse
-// .flex-lg-column
-// .flex-lg-column-reverse
-// .flex-xl-row
-// .flex-xl-row-reverse
-// .flex-xl-column
-// .flex-xl-column-reverse
-// .flex-xxl-row
-// .flex-xxl-row-reverse
-// .flex-xxl-column
-// .flex-xxl-column-reverse
 
 .flex-row,
 .flex-sm-row,
@@ -64,7 +39,7 @@
 .flex-lg-row,
 .flex-xl-row,
 .flex-xxl-row {
-  flex-direction: row;
+  flex-direction: row !important;
 }
 
 .flex-column,
@@ -73,7 +48,7 @@
 .flex-lg-column,
 .flex-xl-column,
 .flex-xxl-column {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .flex-row-reverse,
@@ -82,7 +57,7 @@
 .flex-lg-row-reverse,
 .flex-xl-row-reverse,
 .flex-xxl-row-reverse {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse !important;
 }
 
 .flex-column-reverse,
@@ -91,290 +66,10 @@
 .flex-lg-column-reverse,
 .flex-xl-column-reverse,
 .flex-xxl-column-reverse {
-  flex-direction: column-reverse;
-}
-
-// https://getbootstrap.com/docs/5.2/utilities/flex/#justify-content
-
-// .justify-content-start
-// .justify-content-end
-// .justify-content-center
-// .justify-content-between
-// .justify-content-around
-// .justify-content-evenly
-// .justify-content-sm-start
-// .justify-content-sm-end
-// .justify-content-sm-center
-// .justify-content-sm-between
-// .justify-content-sm-around
-// .justify-content-sm-evenly
-// .justify-content-md-start
-// .justify-content-md-end
-// .justify-content-md-center
-// .justify-content-md-between
-// .justify-content-md-around
-// .justify-content-md-evenly
-// .justify-content-lg-start
-// .justify-content-lg-end
-// .justify-content-lg-center
-// .justify-content-lg-between
-// .justify-content-lg-around
-// .justify-content-lg-evenly
-// .justify-content-xl-start
-// .justify-content-xl-end
-// .justify-content-xl-center
-// .justify-content-xl-between
-// .justify-content-xl-around
-// .justify-content-xl-evenly
-// .justify-content-xxl-start
-// .justify-content-xxl-end
-// .justify-content-xxl-center
-// .justify-content-xxl-between
-// .justify-content-xxl-around
-// .justify-content-xxl-evenly
-
-.justify-content-start,
-.justify-content-sm-start,
-.justify-content-md-start,
-.justify-content-lg-start,
-.justify-content-xl-start,
-.justify-content-xxl-start {
-  justify-content: flex-start;
-}
-
-.justify-content-end,
-.justify-content-sm-end,
-.justify-content-md-end,
-.justify-content-lg-end,
-.justify-content-xl-end,
-.justify-content-xxl-end {
-  justify-content: flex-end;
-}
-
-.justify-content-center,
-.justify-content-sm-center,
-.justify-content-md-center,
-.justify-content-lg-center,
-.justify-content-xl-center,
-.justify-content-xxl-center {
-  justify-content: center;
-}
-
-.justify-content-between,
-.justify-content-sm-between,
-.justify-content-md-between,
-.justify-content-lg-between,
-.justify-content-xl-between,
-.justify-content-xxl-between {
-  justify-content: space-between;
-}
-
-.justify-content-around,
-.justify-content-sm-around,
-.justify-content-md-around,
-.justify-content-lg-around,
-.justify-content-xl-around,
-.justify-content-xxl-around {
-  justify-content: space-around;
-}
-
-.justify-content-evenly,
-.justify-content-sm-evenly,
-.justify-content-md-evenly,
-.justify-content-lg-evenly,
-.justify-content-xl-evenly,
-.justify-content-xxl-evenly {
-  justify-content: space-evenly;
-}
-
-// https://getbootstrap.com/docs/5.2/utilities/flex/#align-items
-
-// .align-items-start
-// .align-items-end
-// .align-items-center
-// .align-items-baseline
-// .align-items-stretch
-// .align-items-sm-start
-// .align-items-sm-end
-// .align-items-sm-center
-// .align-items-sm-baseline
-// .align-items-sm-stretch
-// .align-items-md-start
-// .align-items-md-end
-// .align-items-md-center
-// .align-items-md-baseline
-// .align-items-md-stretch
-// .align-items-lg-start
-// .align-items-lg-end
-// .align-items-lg-center
-// .align-items-lg-baseline
-// .align-items-lg-stretch
-// .align-items-xl-start
-// .align-items-xl-end
-// .align-items-xl-center
-// .align-items-xl-baseline
-// .align-items-xl-stretch
-// .align-items-xxl-start
-// .align-items-xxl-end
-// .align-items-xxl-center
-// .align-items-xxl-baseline
-// .align-items-xxl-stretch
-
-.align-items-start,
-.align-items-sm-start,
-.align-items-md-start,
-.align-items-lg-start,
-.align-items-xl-start,
-.align-items-xxl-start {
-  align-items: flex-start;
-}
-
-.align-items-end,
-.align-items-sm-end,
-.align-items-md-end,
-.align-items-lg-end,
-.align-items-xl-end,
-.align-items-xxl-end {
-  align-items: flex-end;
-}
-
-.align-items-center,
-.align-items-sm-center,
-.align-items-md-center,
-.align-items-lg-center,
-.align-items-xl-center,
-.align-items-xxl-center {
-  align-items: center;
-}
-
-.align-items-baseline,
-.align-items-sm-baseline,
-.align-items-md-baseline,
-.align-items-lg-baseline,
-.align-items-xl-baseline,
-.align-items-xxl-baseline {
-  align-self: baseline;
-}
-
-.align-items-stretch,
-.align-items-sm-stretch,
-.align-items-md-stretch,
-.align-items-lg-stretch,
-.align-items-xl-stretch,
-.align-items-xxl-stretch {
-  align-items: stretch;
-}
-
-// https://getbootstrap.com/docs/5.2/utilities/flex/#align-self
-
-// .align-self-start
-// .align-self-end
-// .align-self-center
-// .align-self-baseline
-// .align-self-stretch
-// .align-self-sm-start
-// .align-self-sm-end
-// .align-self-sm-center
-// .align-self-sm-baseline
-// .align-self-sm-stretch
-// .align-self-md-start
-// .align-self-md-end
-// .align-self-md-center
-// .align-self-md-baseline
-// .align-self-md-stretch
-// .align-self-lg-start
-// .align-self-lg-end
-// .align-self-lg-center
-// .align-self-lg-baseline
-// .align-self-lg-stretch
-// .align-self-xl-start
-// .align-self-xl-end
-// .align-self-xl-center
-// .align-self-xl-baseline
-// .align-self-xl-stretch
-// .align-self-xxl-start
-// .align-self-xxl-end
-// .align-self-xxl-center
-// .align-self-xxl-baseline
-// .align-self-xxl-stretch
-
-.align-self-start,
-.align-self-sm-start,
-.align-self-md-start,
-.align-self-lg-start,
-.align-self-xl-start,
-.align-self-xxl-start {
-  align-self: flex-start;
-}
-
-.align-self-end,
-.align-self-sm-end,
-.align-self-md-end,
-.align-self-lg-end,
-.align-self-xl-end,
-.align-self-xxl-end {
-  align-self: flex-end;
-}
-
-.align-self-center,
-.align-self-sm-center,
-.align-self-md-center,
-.align-self-lg-center,
-.align-self-xl-center,
-.align-self-xxl-center {
-  align-self: center;
-}
-
-.align-self-baseline,
-.align-self-sm-baseline,
-.align-self-md-baseline,
-.align-self-lg-baseline,
-.align-self-xl-baseline,
-.align-self-xxl-baseline {
-  align-self: baseline;
-}
-
-.align-self-stretch,
-.align-self-sm-stretch,
-.align-self-md-stretch,
-.align-self-lg-stretch,
-.align-self-xl-stretch,
-.align-self-xxl-stretch {
-  align-self: stretch;
-}
-
-// https://getbootstrap.com/docs/5.2/utilities/flex/#fill
-
-// .flex-fill
-// .flex-sm-fill
-// .flex-md-fill
-// .flex-lg-fill
-// .flex-xl-fill
-// .flex-xxl-fill
-
-.flex-fill,
-.flex-sm-fill,
-.flex-md-fill,
-.flex-lg-fill,
-.flex-xl-fill,
-.flex-xxl-fill {
-  flex: 1 1 auto;
+  flex-direction: column-reverse !important;
 }
 
 // https://getbootstrap.com/docs/5.2/utilities/flex/#grow-and-shrink
-
-// .flex-{grow|shrink}-0
-// .flex-{grow|shrink}-1
-// .flex-sm-{grow|shrink}-0
-// .flex-sm-{grow|shrink}-1
-// .flex-md-{grow|shrink}-0
-// .flex-md-{grow|shrink}-1
-// .flex-lg-{grow|shrink}-0
-// .flex-lg-{grow|shrink}-1
-// .flex-xl-{grow|shrink}-0
-// .flex-xl-{grow|shrink}-1
-// .flex-xxl-{grow|shrink}-0
-// .flex-xxl-{grow|shrink}-1
 
 .flex-grow-0,
 .flex-sm-grow-0,
@@ -382,7 +77,7 @@
 .flex-lg-grow-0,
 .flex-xl-grow-0,
 .flex-xxl-grow-0 {
-  flex-grow: 0;
+  flex-grow: 0 !important;
 }
 
 .flex-grow-1,
@@ -391,7 +86,7 @@
 .flex-lg-grow-1,
 .flex-xl-grow-1,
 .flex-xxl-grow-1 {
-  flex-grow: 1;
+  flex-grow: 1 !important;
 }
 
 .flex-shrink-0,
@@ -400,7 +95,7 @@
 .flex-lg-shrink-0,
 .flex-xl-shrink-0,
 .flex-xxl-shrink-0 {
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
 }
 
 .flex-shrink-1,
@@ -409,5 +104,303 @@
 .flex-lg-shrink-1,
 .flex-xl-shrink-1,
 .flex-xxl-shrink-1 {
-  flex-shrink: 1;
+  flex-shrink: 1 !important;
+}
+
+// https://getbootstrap.com/docs/5.2/utilities/flex/#wrap
+
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
+
+// https://getbootstrap.com/docs/5.2/utilities/flex/#justify-content
+
+.justify-content-start,
+.justify-content-sm-start,
+.justify-content-md-start,
+.justify-content-lg-start,
+.justify-content-xl-start,
+.justify-content-xxl-start {
+  justify-content: flex-start !important;
+}
+
+.justify-content-end,
+.justify-content-sm-end,
+.justify-content-md-end,
+.justify-content-lg-end,
+.justify-content-xl-end,
+.justify-content-xxl-end {
+  justify-content: flex-end !important;
+}
+
+.justify-content-center,
+.justify-content-sm-center,
+.justify-content-md-center,
+.justify-content-lg-center,
+.justify-content-xl-center,
+.justify-content-xxl-center {
+  justify-content: center !important;
+}
+
+.justify-content-between,
+.justify-content-sm-between,
+.justify-content-md-between,
+.justify-content-lg-between,
+.justify-content-xl-between,
+.justify-content-xxl-between {
+  justify-content: space-between !important;
+}
+
+.justify-content-around,
+.justify-content-sm-around,
+.justify-content-md-around,
+.justify-content-lg-around,
+.justify-content-xl-around,
+.justify-content-xxl-around {
+  justify-content: space-around !important;
+}
+
+.justify-content-evenly,
+.justify-content-sm-evenly,
+.justify-content-md-evenly,
+.justify-content-lg-evenly,
+.justify-content-xl-evenly,
+.justify-content-xxl-evenly {
+  justify-content: space-evenly !important;
+}
+
+// https://getbootstrap.com/docs/5.2/utilities/flex/#align-items
+
+.align-items-start,
+.align-items-sm-start,
+.align-items-md-start,
+.align-items-lg-start,
+.align-items-xl-start,
+.align-items-xxl-start {
+  align-items: flex-start !important;
+}
+
+.align-items-end,
+.align-items-sm-end,
+.align-items-md-end,
+.align-items-lg-end,
+.align-items-xl-end,
+.align-items-xxl-end {
+  align-items: flex-end !important;
+}
+
+.align-items-center,
+.align-items-sm-center,
+.align-items-md-center,
+.align-items-lg-center,
+.align-items-xl-center,
+.align-items-xxl-center {
+  align-items: center !important;
+}
+
+.align-items-baseline,
+.align-items-sm-baseline,
+.align-items-md-baseline,
+.align-items-lg-baseline,
+.align-items-xl-baseline,
+.align-items-xxl-baseline {
+  align-items: baseline !important;
+}
+
+.align-items-stretch,
+.align-items-sm-stretch,
+.align-items-md-stretch,
+.align-items-lg-stretch,
+.align-items-xl-stretch,
+.align-items-xxl-stretch {
+  align-items: stretch !important;
+}
+
+// https://getbootstrap.com/docs/5.2/utilities/flex/#align-content
+
+.align-content-start,
+.align-content-sm-start,
+.align-content-md-start,
+.align-content-lg-start,
+.align-content-xl-start,
+.align-content-xxl-start {
+  align-content: flex-start !important;
+}
+
+.align-content-end,
+.align-content-sm-end,
+.align-content-md-end,
+.align-content-lg-end,
+.align-content-xl-end,
+.align-content-xxl-end {
+  align-content: flex-end !important;
+}
+
+.align-content-center,
+.align-content-sm-center,
+.align-content-md-center,
+.align-content-lg-center,
+.align-content-xl-center,
+.align-content-xxl-center {
+  align-content: center !important;
+}
+
+.align-content-between,
+.align-content-sm-between,
+.align-content-md-between,
+.align-content-lg-between,
+.align-content-xl-between,
+.align-content-xxl-between {
+  align-content: space-between !important;
+}
+
+.align-content-around,
+.align-content-sm-around,
+.align-content-md-around,
+.align-content-lg-around,
+.align-content-xl-around,
+.align-content-xxl-around {
+  align-content: space-around !important;
+}
+
+.align-content-stretch,
+.align-content-sm-stretch,
+.align-content-md-stretch,
+.align-content-lg-stretch,
+.align-content-xl-stretch,
+.align-content-xxl-stretch {
+  align-content: stretch !important;
+}
+
+// https://getbootstrap.com/docs/5.2/utilities/flex/#align-self
+
+.align-self-auto {
+  align-self: auto !important;
+}
+
+.align-self-start,
+.align-self-sm-start,
+.align-self-md-start,
+.align-self-lg-start,
+.align-self-xl-start,
+.align-self-xxl-start {
+  align-self: flex-start !important;
+}
+
+.align-self-end,
+.align-self-sm-end,
+.align-self-md-end,
+.align-self-lg-end,
+.align-self-xl-end,
+.align-self-xxl-end {
+  align-self: flex-end !important;
+}
+
+.align-self-center,
+.align-self-sm-center,
+.align-self-md-center,
+.align-self-lg-center,
+.align-self-xl-center,
+.align-self-xxl-center {
+  align-self: center !important;
+}
+
+.align-self-baseline,
+.align-self-sm-baseline,
+.align-self-md-baseline,
+.align-self-lg-baseline,
+.align-self-xl-baseline,
+.align-self-xxl-baseline {
+  align-self: baseline !important;
+}
+
+.align-self-stretch,
+.align-self-sm-stretch,
+.align-self-md-stretch,
+.align-self-lg-stretch,
+.align-self-xl-stretch,
+.align-self-xxl-stretch {
+  align-self: stretch !important;
+}
+
+// https://getbootstrap.com/docs/5.2/utilities/flex/#order
+
+.order-first,
+.order-sm-first,
+.order-md-first,
+.order-lg-first,
+.order-xl-first,
+.order-xxl-first {
+  order: -1 !important;
+}
+
+.order-0,
+.order-sm-0,
+.order-md-0,
+.order-lg-0,
+.order-xl-0,
+.order-xxl-0 {
+  order: 0 !important;
+}
+
+.order-1,
+.order-sm-1,
+.order-md-1,
+.order-lg-1,
+.order-xl-1,
+.order-xxl-1 {
+  order: 1 !important;
+}
+
+.order-2,
+.order-sm-2,
+.order-md-2,
+.order-lg-2,
+.order-xl-2,
+.order-xxl-2 {
+  order: 2 !important;
+}
+
+.order-3,
+.order-sm-3,
+.order-md-3,
+.order-lg-3,
+.order-xl-3,
+.order-xxl-3 {
+  order: 3 !important;
+}
+
+.order-4,
+.order-sm-4,
+.order-md-4,
+.order-lg-4,
+.order-xl-4,
+.order-xxl-4 {
+  order: 4 !important;
+}
+
+.order-5,
+.order-sm-5,
+.order-md-5,
+.order-lg-5,
+.order-xl-5,
+.order-xxl-5 {
+  order: 5 !important;
+}
+
+.order-last,
+.order-sm-last,
+.order-md-last,
+.order-lg-last,
+.order-xl-last,
+.order-xxl-last {
+  order: 6 !important;
 }

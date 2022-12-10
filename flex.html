@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary."
+    />
+    <title>Flex</title>
+    <link rel="stylesheet" href="flex.css" />
+    <style>
+      .d-flex + .d-flex,
+      .d-flex + .d-inline-flex,
+      .bd-example + .bd-example {
+        margin-top: 1rem;
+      }
+      li {
+        color:white;
+      }
+      li::selection {
+        color: red;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex</h1>
+
+    <h2>Enable flex behaviors</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex p-2">I'm a flexbox container!</div>
+      <div class="d-inline-flex p-2">I'm an inline flexbox container!</div>
+    </div>
+
+    <ul>
+      <li>d-flex p-2</li>
+      <li>d-inline-flex p-2</li>
+    </ul>
+
+    <h2>Direction</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex flex-row mb-3">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex flex-column mb-3">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex flex-column-reverse">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>d-flex flex-row mb-3</li>
+      <li>d-flex flex-row-reverse</li>
+      <li>d-flex flex-column mb-3</li>
+      <li>d-flex flex-column-reverse</li>
+    </ul>
+
+    <h2>Justify content</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex justify-content-start">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-end">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-around">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-evenly">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+    </div>
+    <ul>
+      <li>d-flex justify-content-start</li>
+      <li>d-flex justify-content-end</li>
+      <li>d-flex justify-content-center</li>
+      <li>d-flex justify-content-between</li>
+      <li>d-flex justify-content-around</li>
+      <li>d-flex justify-content-evenly</li>
+    </ul>
+
+    <h2>Align items</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex align-items-start mb-3" style="height: 100px">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex align-items-end mb-3" style="height: 100px">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex align-items-center mb-3" style="height: 100px">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex align-items-baseline mb-3" style="height: 100px">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex align-items-stretch mb-3" style="height: 100px">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>d-flex align-items-start mb-3</li>
+      <li>d-flex align-items-end mb-3</li>
+      <li>d-flex align-items-center mb-3</li>
+      <li>d-flex align-items-baseline mb-3</li>
+      <li>d-flex align-items-stretch mb-3</li>
+    </ul>
+
+    <h2>Align self</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex mb-3" style="height: 100px">
+        <div class="p-2">Flex item</div>
+        <div class="align-self-start p-2">Aligned flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div class="d-flex mb-3" style="height: 100px">
+        <div class="p-2">Flex item</div>
+        <div class="align-self-end p-2">Aligned flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div class="d-flex mb-3" style="height: 100px">
+        <div class="p-2">Flex item</div>
+        <div class="align-self-center p-2">Aligned flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div class="d-flex mb-3" style="height: 100px">
+        <div class="p-2">Flex item</div>
+        <div class="align-self-baseline p-2">Aligned flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div class="d-flex" style="height: 100px">
+        <div class="p-2">Flex item</div>
+        <div class="align-self-stretch p-2">Aligned flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>
+        d-flex mb-3
+        <ul>
+          <li>align-self-start p-2</li>
+          <li>align-self-end p-2</li>
+          <li>align-self-center p-2</li>
+          <li>align-self-baseline p-2</li>
+          <li>align-self-stretch p-2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Fill</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex">
+        <div class="p-2 flex-fill">Flex item with a lot of content</div>
+        <div class="p-2 flex-fill">Flex item</div>
+        <div class="p-2 flex-fill">Flex item</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>
+        d-flex
+        <ul>
+          <li>p-2 flex-fill</li>
+          <li>p-2 flex-fill</li>
+          <li>p-2 flex-fill</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Grow and shrink</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex">
+        <div class="p-2 flex-grow-1">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Third flex item</div>
+      </div>
+      <div class="d-flex">
+        <div class="p-2 w-100">Flex item</div>
+        <div class="p-2 flex-shrink-1">Flex item</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>
+        d-flex
+        <ul>
+          <li>p-2 flex-grow-1</li>
+          <li>p-2</li>
+          <li>p-2</li>
+        </ul>
+      </li>
+      <li>
+        d-flex
+        <ul>
+          <li>p-2 w-100</li>
+          <li>p-2 flex-shrink-1</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Auto margins</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex mb-3">
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+
+      <div class="d-flex mb-3">
+        <div class="me-auto p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+
+      <div class="d-flex mb-3">
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="ms-auto p-2">Flex item</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>
+        d-flex
+        <ul>
+          <li>p-2</li>
+          <li>p-2</li>
+          <li>p-2</li>
+        </ul>
+      </li>
+      <li>
+        d-flex
+        <ul>
+          <li>me-auto p-2</li>
+          <li>p-2</li>
+          <li>p-2</li>
+        </ul>
+      </li>
+      <li>
+        d-flex
+        <ul>
+          <li>p-2</li>
+          <li>p-2</li>
+          <li>ms-auto p-2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>With align-items</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div
+        class="d-flex align-items-start flex-column mb-3"
+        style="height: 200px"
+      >
+        <div class="mb-auto p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+
+      <div
+        class="d-flex align-items-end flex-column mb-3"
+        style="height: 200px"
+      >
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="mt-auto p-2">Flex item</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>
+        d-flex align-items-start flex-column mb-3
+        <ul>
+          <li>mb-auto p-2</li>
+          <li>p-2</li>
+          <li>p-2</li>
+        </ul>
+      </li>
+      <li>
+        d-flex align-items-end flex-column mb-3
+        <ul>
+          <li>p-2</li>
+          <li>p-2</li>
+          <li>mt-auto p-2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Wrap</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex flex-nowrap" style="width: 8rem">
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div class="d-flex flex-wrap">
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div class="d-flex flex-wrap-reverse">
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>
+        d-flex flex-nowrap
+        <ul>
+          <li>p-2 * 5</li>
+        </ul>
+      </li>
+      <li>
+        d-flex flex-wrap
+        <ul>
+          <li>Flex item * 28</li>
+        </ul>
+      </li>
+      <li>
+        d-flex flex-wrap-reverse
+        <ul>
+          <li>Flex item * 28</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Order</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div class="d-flex flex-nowrap">
+        <div class="order-3 p-2">First flex item</div>
+        <div class="order-2 p-2">Second flex item</div>
+        <div class="order-1 p-2">Third flex item</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>
+        d-flex flex-nowrap
+        <ul>
+          <li>order-3 p-2</li>
+          <li>order-2 p-2</li>
+          <li>order-1 p-2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Align content</h2>
+
+    <div class="bd-example bd-example-flex">
+      <div
+        class="d-flex align-content-start flex-wrap mb-3"
+        style="height: 200px"
+      >
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div
+        class="d-flex align-content-end flex-wrap mb-3"
+        style="height: 200px"
+      >
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div
+        class="d-flex align-content-center flex-wrap mb-3"
+        style="height: 200px"
+      >
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div
+        class="d-flex align-content-between flex-wrap mb-3"
+        style="height: 200px"
+      >
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div
+        class="d-flex align-content-around flex-wrap mb-3"
+        style="height: 200px"
+      >
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+      <div
+        class="d-flex align-content-stretch flex-wrap mb-3"
+        style="height: 200px"
+      >
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+        <div class="p-2">Flex item</div>
+      </div>
+    </div>
+
+    <ul>
+      <li>
+        d-flex align-content-start flex-wrap mb-3
+        <ul>
+          <li>p2 * 28</li>
+        </ul>
+      </li>
+      <li>
+        d-flex align-content-end flex-wrap mb-3
+        <ul>
+          <li>p2 * 28</li>
+        </ul>
+      </li>
+      <li>
+        d-flex align-content-center flex-wrap mb-3
+        <ul>
+          <li>p2 * 28</li>
+        </ul>
+      </li>
+      <li>
+        d-flex align-content-between flex-wrap mb-3
+        <ul>
+          <li>p2 * 28</li>
+        </ul>
+      </li>
+      <li>
+        d-flex align-content-around flex-wrap mb-3
+        <ul>
+          <li>p2 * 28</li>
+        </ul>
+      </li>
+      <li>
+        d-flex align-content-stretch flex-wrap mb-3
+        <ul>
+          <li>p2 * 28</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Media object</h2>
+
+    <div class="bd-example">
+      <div class="d-flex">
+        <div class="flex-shrink-0">
+          <svg
+            class="bd-placeholder-img"
+            width="100"
+            height="100"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: Image"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#e5e5e5"></rect>
+            <text x="50%" y="50%" fill="#999" dy=".3em">Image</text>
+          </svg>
+        </div>
+        <div class="flex-grow-1 ms-3">
+          This is some content from a media component. You can replace this with
+          any content and adjust it as needed.
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img src="https://picsum.photos/200/200" alt="Ipsum Pictures" />
+        </div>
+        <div class="flex-grow-1 ms-3">
+          This is some content from a media component. You can replace this with
+          any content and adjust it as needed.
+        </div>
+      </div>
+    </div>
+    <ul>
+      <li>
+        d-flex
+        <ul>
+          <li>
+            flex-shrink-0
+            <ul>
+              <li>svg</li>
+            </ul>
+          </li>
+          <li>
+            flex-grow-1 ms-3
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        d-flex align-items-center
+        <ul>
+          <li>
+            flex-shrink-0
+            <ul>
+              <li>img</li>
+            </ul>
+          </li>
+          <li>
+            flex-grow-1 ms-3
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
