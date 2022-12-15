@@ -89,6 +89,35 @@ body {
   line-height: 1.5;
 }
 
+code, kbd, pre, samp {
+  font-family: var(--bs-font-monospace);
+  font-size: 1em;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  font-size: 0.875em;
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+
+code {
+  font-size: 0.875em;
+  color: var(--bs-code-color);
+  word-wrap: break-word;
+}
+
+a > code {
+  color: inherit;
+}
+
 .m-0 {
   margin: 0 !important;
 }
@@ -543,6 +572,21 @@ body {
   min-height: 100vh !important;
 }
 
+/********
+ * TEXT *
+ ********/
+.text-start {
+  text-align: left !important;
+}
+
+.text-end {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
 :root {
   --bd-purple: #4c0bce;
   --bd-violet: #712cf9;
@@ -676,11 +720,6 @@ body {
   background-color: rgba(255, 0, 0, 0.1);
 }
 
-.bd-example-flex div {
-  background-color: rgba(76, 11, 206, 0.15);
-  border: 1px solid rgba(76, 11, 206, 0.15);
-}
-
 .bd-placeholder-img {
   font-size: 1.125rem;
   -webkit-user-select: none;
@@ -699,6 +738,43 @@ body {
     font-size: 3.5rem;
   }
 }
+.d-flex + .d-inline-flex, .d-flex + .d-flex {
+  margin-top: 1rem;
+}
+
+.bd-example + .bd-example {
+  margin-top: 1rem;
+}
+
+li {
+  color: white;
+}
+li::-moz-selection {
+  color: red;
+  background-color: yellow;
+}
+li::selection {
+  color: red;
+  background-color: yellow;
+}
+
+/************
+ * GRID.CSS *
+ ************/
+.themed-grid-col {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+.themed-container {
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(0, 123, 255, 0.15);
+  border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
 .d-flex,
 .d-sm-flex,
 .d-md-flex,

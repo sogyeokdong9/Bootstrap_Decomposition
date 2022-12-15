@@ -1,0 +1,54 @@
+@import "common", "utilities", "docs", "grid", "custom";
+
+/***************************************************************************************************************************************
+ *       EXTRA SMALL < 576PX        SMALL ≥ 576PX        MEDIUM ≥ 768PX      LARGE ≥ 992PX      X-LARGE ≥ 1200PX    XX-LARGE ≥ 1400PX *
+ **************************************************************************************************************************************/
+/**************************************************************************************************************************************
+ * .CONTAINER           100%                540PX                 720PX              960PX                1140PX              1320PX *
+ * .CONTAINER-SM        100%                540PX                 720PX              960PX                1140PX              1320PX *
+ * .CONTAINER-MD        100%                 100%                 720PX              960PX                1140PX              1320PX *
+ * .CONTAINER-LG        100%                 100%                  100%              960PX                1140PX              1320PX *
+ * .CONTAINER-XL        100%                 100%                  100%               100%                1140PX              1320PX *
+ * .CONTAINER-XXL       100%                 100%                  100%               100%                  100%              1320PX *
+ * .CONTAINER-FLUID     100%                 100%                  100%               100%                  100%              100%   *
+ **************************************************************************************************************************************/
+
+.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto
+}
+
+@media (min-width: 576px) {
+  .container,.container-sm {
+    max-width:540px
+  }
+}
+
+@media (min-width: 768px) {
+  .container,.container-md,.container-sm {
+    max-width:720px
+  }
+}
+
+@media (min-width: 992px) {
+  .container,.container-lg,.container-md,.container-sm {
+    max-width:960px
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,.container-lg,.container-md,.container-sm,.container-xl {
+    max-width:1140px
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl {
+    max-width:1320px
+  }
+}

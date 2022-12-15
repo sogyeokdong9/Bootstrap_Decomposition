@@ -99,8 +99,8 @@ $font-family-sans-serif:
   // Emoji fonts
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
-  $black: rgb(0, 0, 0);
-  $white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
 
 // Common
 *, ::after, ::before {
@@ -120,4 +120,33 @@ body {
   font-size: 1em;
   font-family: $font-family-sans-serif;
   line-height: 1.5;
+}
+
+code,kbd,pre,samp {
+  font-family: var(--bs-font-monospace);
+  font-size: 1em
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  font-size: .875em
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal
+}
+
+code {
+  font-size: .875em;
+  color: var(--bs-code-color);
+  word-wrap: break-word
+}
+
+a>code {
+  color: inherit
 }
